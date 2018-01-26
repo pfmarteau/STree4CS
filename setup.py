@@ -7,7 +7,7 @@ setup(
     description='Suffix trees, generalized suffix trees for list of int and for covering similarity evaluation',
     author='Pierre-Francois Marteau',
     author_email='pierre-francois.marteau@univ-ubs.fr',
-    url='https://github.com/ptrus/STree4CS',
+    url='https://github.com/pfmarteau/STree4CS',
     long_description=open('README.rst').read(),
     package_data={},
     include_package_data=True,

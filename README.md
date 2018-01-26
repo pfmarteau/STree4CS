@@ -38,12 +38,10 @@ print(lss) # the optimal covering [[1, 1, 5], [7, 5, 1], [7, 4]],
 
 
 # Usage note
-This library is mostly an academic exercise.
-If you need an efficient library
-I would recommend a python-wrapped c implementation,
+This library is mostly an academic exercise. If you need an efficient library I would recommend a python-wrapped c implementation,
 such as (http://www.daimi.au.dk/~mailund/suffix_tree.html).
 
 
 # More information about the covering similarity
-i) https://arxiv.org/abs/1712.02084
-ii) https://arxiv.org/abs/1801.07013
+* https://arxiv.org/abs/1712.02084
+* https://arxiv.org/abs/1801.07013

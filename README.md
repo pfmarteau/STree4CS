@@ -1,5 +1,5 @@
 # STree4CS
-# Suffix Trees for Covering Similarity Evaluation
+# Suffix Trees for Sequence Covering Similarity Evaluation
 Python implementation of Suffix Trees and Generalized Suffix Trees for sequence (list) of integers and for the evaluation of the covering similarity. 
 Derived rom Peter Us (petrus) implementation of generalized suffix trees available at https://github.com/ptrus/suffix-trees, under The MIT License (MIT).
 
@@ -24,7 +24,7 @@ a = [[1, 2, 3], [4, 5, 6, 2, 3, 7], [1, 2, 3, 4]]
 st = STree.STree4CS(a)
 print(st.lcs()) # [2, 3]
 
-# Covering similarity example
+# Sequence Covering similarity example
 S=[[1,1,2,2,3,4,1,1,5,6], [1,2,4,3,4,5,7,5,1], [6,5,1,7,4,5,6]]
 s=[1,1,5,7,5,1,7,4]
 
@@ -42,6 +42,6 @@ This library is mostly an academic exercise. If you need an efficient library I 
 such as (http://www.daimi.au.dk/~mailund/suffix_tree.html).
 
 
-# More information about the covering similarity
+# More information about the sequence covering similarity
 * https://arxiv.org/abs/1712.02084
 * https://arxiv.org/abs/1801.07013

@@ -6,6 +6,7 @@ Derived rom Peter Us (petrus) implementation of generalized suffix trees availab
 
 ### Installation
 In the install directory:
+
 $ python3 install setup.py
 
 ### Usage

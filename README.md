@@ -1,7 +1,7 @@
 # STree4CS
 # Suffix Trees for Sequence Covering Similarity Evaluation
 Python implementation of Suffix Trees and Generalized Suffix Trees for sequence (list) of integers and for the evaluation of the covering similarity. 
-Derived rom Peter Us (petrus) implementation of generalized suffix trees available at https://github.com/ptrus/suffix-trees, under The MIT License (MIT).
+This code has been derived from Peter Us (petrus) implementation of generalized suffix trees available at https://github.com/ptrus/suffix-trees, under The MIT License (MIT).
 
 
 ### Installation

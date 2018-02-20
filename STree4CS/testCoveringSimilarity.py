@@ -107,11 +107,12 @@ def test3():
 
     
 def test_plagiarism():
-    #Example from https://www.princeton.edu/pr/pub/integrity/pages/plagiarism/
-    #Text example 2. Lifting selected passages and phrases without proper acknowledgment 
+    # Example from https://www.princeton.edu/pr/pub/integrity/pages/plagiarism/
+    # Text example 2. Lifting selected passages and phrases without proper acknowledgment 
+    # Plagiarism text
     s1="Almost all of Shakespeare’s Hamlet can be understood as a play about acting and the theater. For example, in Act 1, Hamlet adopts a pretense of madness that he uses to protect himself and prevent his antagonists from discovering his mission to revenge his father’s murder. He also presents truth by means of a show when he compares the portraits of Gertrude’s two husbands in order to describe for her the true nature of the choice she has made. And when he leaps in Ophelia’s open grave ranting in high heroic terms, Hamlet is acting out the folly of excessive, melodramatic expressions of grief."
 
-    #Original source (text)
+    # Original source (text)
     sref="From time to time this submerged or latent theater in Hamlet becomes almost overt. It is close to the surface in Hamlet’s pretense of madness, the “antic disposition” he puts on to protect himself and prevent his antagonists from plucking out the heart of his mystery. It is even closer to the surface when Hamlet enters his mother’s room and holds up, side by side, the pictures of the two kings, Old Hamlet and Claudius, and proceeds to describe for her the true nature of the choice she has made, presenting truth by means of a show. Similarly, when he leaps into the open grave at Ophelia’s funeral, ranting in high heroic terms, he is acting out for Laertes, and perhaps for himself as well, the folly of excessive, melodramatic expressions of grief."
     s1i=str2intarray(s1)
     srefi=str2intarray(sref)

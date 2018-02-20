@@ -12,7 +12,7 @@ $ python3 install setup.py
 ### Usage
 
 ```python3
-from STrees4CS import STree
+import STrees4CS as STree
 
 # Suffix-Tree example.
 st = STree([[1, 10, 5, 3 200, 8, 10, 2]])

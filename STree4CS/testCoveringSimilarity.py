@@ -108,7 +108,7 @@ def test3():
     
 def test_plagiarism():
     #Example from https://www.princeton.edu/pr/pub/integrity/pages/plagiarism/
-    #Text example 2. Lifting selected passages and phrases without proper acknowledgment (lifted passages are underlined)
+    #Text example 2. Lifting selected passages and phrases without proper acknowledgment 
     s1="Almost all of Shakespeare’s Hamlet can be understood as a play about acting and the theater. For example, in Act 1, Hamlet adopts a pretense of madness that he uses to protect himself and prevent his antagonists from discovering his mission to revenge his father’s murder. He also presents truth by means of a show when he compares the portraits of Gertrude’s two husbands in order to describe for her the true nature of the choice she has made. And when he leaps in Ophelia’s open grave ranting in high heroic terms, Hamlet is acting out the folly of excessive, melodramatic expressions of grief."
 
     #Original source (text)

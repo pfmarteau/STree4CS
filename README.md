@@ -34,7 +34,7 @@ s=[1,1,5,7,5,1,7,4]
 st = STree(S)
 
 # get the S-optimal covering similarity for s
-score, lbreak, lss = st.evaluateSimple(s)
+score, lbreak, lss = st.evaluateDichotomic(s)
 print(score) # 0.75
 print(lss) # the optimal covering [[1, 1, 5], [7, 5, 1], [7, 4]], 
 

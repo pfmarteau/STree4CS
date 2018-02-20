@@ -325,6 +325,8 @@ class STree4CS():
                 if end - 1 - beg > 0:
                     beg0 = end - 1
                     # print(s[end - 1], end-1-beg)
+            if(beg+1==end):
+               end+=1
             lss.append(s[beg:end - 1])
             beg = beg0
         score = (L - len(lbreak)) / L
@@ -354,6 +356,8 @@ class STree4CS():
                 lbreak.append([end - 1 - beg, s[end - 1]])
                 if end - 1 - beg > 0:
                     beg0 = end - 1
+            if(beg+1==end):
+               end+=1
             lss.append(s[beg:end - 1])
             beg = beg0
         score = (L - len(lbreak)) / L

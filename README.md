@@ -15,7 +15,7 @@ $ python3 install setup.py
 from STrees4CS import STree
 
 # Suffix-Tree example.
-st = STree.STree4CS([[1, 10, 5, 3 200, 8, 10, 2]])
+st = STree([[1, 10, 5, 3 200, 8, 10, 2]])
 print(st.find([1, 10])) # 0
 print(st.find_all([10])) # [1, 6]
 
@@ -31,7 +31,7 @@ S=[[1,1,2,2,3,4,1,1,5,6], [1,2,4,3,4,5,7,5,1], [6,5,1,7,4,5,6]]
 s=[1,1,5,7,5,1,7,4]
 
 # Build the generalized Suffix-Tree for S
-st = STree.STree4CS(S)
+st = STree(S)
 
 # get the S-optimal covering similarity for s
 score, lbreak, lss = st.evaluateSimple(s)

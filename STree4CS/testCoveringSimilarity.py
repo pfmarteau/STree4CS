@@ -122,5 +122,6 @@ def test_plagiarism():
     cref = st1.evaluateDichotomic(srefi)
     d = 1.0/2.0*(2-c1[0]-cref[0])
     print('dist=',d)
+    print('covering similarity =', c1[0])
     print('covering=', arrayOfintarray2str(c1[2]))
     return c1

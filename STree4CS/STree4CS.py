@@ -309,29 +309,29 @@ class STree4CS():
         returns score, the sum of the length of all the subsequences of s found in the Stree
         returnslbreak, the list of the symbols that have break the search of a subsequence and the length of the
         previously found subsequence'''
-        score = 0
+    def evaluateDichotomic(self, s):
+        '''
+        :param s: the sequence for which the covering similarirty will be evaluated
+        :return: the covering simlarity for s evaluated using the dichotomic way
+        '''
+        '''evaluate the covering of the suffix tree with regard to input sequence s
+        returns score, the sum of the length of all the subsequences of s found in the Stree
+        returnslbreak, the list of the symbols that have break the search of a subsequence and the length of the
+        previously found subsequence'''
         lbreak = []
         lss = []
         beg = 0
         L = len(s)
-        while beg < L:
-            end = self.getNextBreakDichotomic(s[beg:]) + beg
-            # print(beg, end, len(s))
-            score += end - beg - 1
-            # print(beg,end,end='||')
-            beg0 = end
-            if end < L:
-                lbreak.append([end - 1 - beg, s[end - 1]])
-                if end - 1 - beg > 0:
-                    beg0 = end - 1
-                    # print(s[end - 1], end-1-beg)
-            if(beg+1==end):
+        while beg<L :
+            end = self.getNextBreakDichotomic(s[beg:]) + beg -1
+            if end == beg : #if s[beg] isn't in the tree
                end+=1
-            lss.append(s[beg:end - 1])
-            beg = beg0
-        score = (L - len(lbreak)) / L
-        # print('score=', score, len(lbreak), len(s))
-        return [score, lbreak, lss]
+            if end<L :
+               lbreak.append([s[end] , end-beg])
+            lss.append(s[beg:end])
+            beg = end
+        score = (L-len(lss)+1)/L
+        return [score,lbreak,lss]
 
     def evaluateSimple(self, s):
         '''

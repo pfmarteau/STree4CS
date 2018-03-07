@@ -2,6 +2,7 @@
 Derived rom Peter Us (petrus) implementation of generalized suffix trees available at https://github.com/ptrus/suffix-trees
 The MIT License (MIT),
 Modified by P-F. Marteau, 9 november 2017 to cope with list of integers and covering similarity computation
+Bug in the 'evaluateDichotomic()' function, corrected by François Brochard (Master 2 student at Université Bretagne Sud), 7th of March 2018
 '''
 import sys
 import numpy as np

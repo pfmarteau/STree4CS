@@ -30,7 +30,7 @@ def coveringDistance_str(s1, s2):
     st2 = STree.STree4CS([s22])
     d1 = st1.evaluateDichotomic(s22)
     d2 = st2.evaluateDichotomic(s11)
-    d = 1.0 / 2.0 * (2 - d1[0] - d2[0] +1.0/len(s11) + 1.0/len(s22))
+    d = 1.0 / 2.0 * (2 - d1[0] - d2[0])
     return d
 
 
@@ -44,7 +44,7 @@ def coveringDistance(s1, s2):
     st2 = STree.STree4CS([s2])
     d1 = st1.evaluateDichotomic(s2)
     d2 = st2.evaluateDichotomic(s1)
-    d = 1.0 / 2.0 * (2 - d1[0] - d2[0] + 1.0/len(s1) + 1.0/len(s2))
+    d = 1.0 / 2.0 * (2 - d1[0] - d2[0])
     return d
 
 

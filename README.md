@@ -19,7 +19,7 @@ $ pip3 install git+https://github.com/pfmarteau/STree4CS
 import STree4CS as STree
 
 # Suffix-Tree example.
-st = STree.STree4CS([[1, 10, 5, 3 200, 8, 10, 2]])
+st = STree.STree4CS([[1, 10, 5, 3, 200, 8, 10, 2]])
 print(st.find([1, 10])) # 0
 print(st.find_all([10])) # [1, 6]
 

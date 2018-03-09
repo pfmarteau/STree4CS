@@ -8,7 +8,7 @@ setup(
     author='Pierre-Francois Marteau',
     author_email='pierre-francois.marteau@univ-ubs.fr',
     url='https://github.com/pfmarteau/STree4CS',
-    long_description=open('README.rst').read(),
+    long_description=open('README.md').read(),
     package_data={},
     include_package_data=True,
     license='MIT',

@@ -1,4 +1,4 @@
-from STree4CS import STree4CS as STree
+import STree4CS as STree
 import random
 import numpy as np
 

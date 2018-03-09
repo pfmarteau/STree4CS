@@ -16,7 +16,7 @@ $ pip3 install git+https://github.com/pfmarteau/STree4CS
 ### Usage
 
 ```python3
-import STree4CS as STree
+from STree4CS import STree4CS as STree
 
 # Suffix-Tree example.
 st = STree.STree4CS([[1, 10, 5, 3, 200, 8, 10, 2]])

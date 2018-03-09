@@ -8,7 +8,9 @@ This code has been derived from Peter Us (petrus) implementation of generalized 
 In the install directory:
 
 $ python3 setup.py
+
 or
+
 $ pip3 install git+https://github.com/pfmarteau/STree4CS
 
 ### Usage

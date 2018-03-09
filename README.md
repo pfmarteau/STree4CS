@@ -7,7 +7,7 @@ This code has been derived from Peter Us (petrus) implementation of generalized 
 ### Installation
 In the install directory:
 
-$ python3 setup.py
+$ python3 setup.py install
 
 or
 

@@ -310,19 +310,12 @@ class STree4CS():
         returns score, the sum of the length of all the subsequences of s found in the Stree
         returnslbreak, the list of the symbols that have break the search of a subsequence and the length of the
         previously found subsequence'''
-    def evaluateDichotomic(self, s):
-        '''
-        :param s: the sequence for which the covering similarirty will be evaluated
-        :return: the covering simlarity for s evaluated using the dichotomic way
-        '''
-        '''evaluate the covering of the suffix tree with regard to input sequence s
-        returns score, the sum of the length of all the subsequences of s found in the Stree
-        returnslbreak, the list of the symbols that have break the search of a subsequence and the length of the
-        previously found subsequence'''
         lbreak = []
         lss = []
         beg = 0
         L = len(s)
+        if L==0:
+            return [1,[],[]]
         while beg<L :
             end = self.getNextBreakDichotomic(s[beg:]) + beg -1
             if end == beg : #if s[beg] isn't in the tree

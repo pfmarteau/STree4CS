@@ -310,12 +310,12 @@ class STree4CS():
         returns score, the sum of the length of all the subsequences of s found in the Stree
         returnslbreak, the list of the symbols that have break the search of a subsequence and the length of the
         previously found subsequence'''
-        lbreak = []
-        lss = []
-        beg = 0
         L = len(s)
         if L==0:
             return [1,[],[]]
+        lbreak = []
+        lss = []
+        beg = 0
         while beg<L :
             end = self.getNextBreakDichotomic(s[beg:]) + beg -1
             if end == beg : #if s[beg] isn't in the tree
@@ -336,10 +336,12 @@ class STree4CS():
         returns score, the sum of the length of all the subsequences of s found in the Stree
         returnslbreak, the list of the symbols that have break the search of a subsequence and the length of the
         previously found subsequence'''
+        L = len(s)
+        if L==0:
+            return [1,[],[]]
         lbreak = []
         lss = []
         beg = 0
-        L = len(s)
         while beg < L:
             end = beg + 1
             while end <= L and self.find(s[beg:end]) >= 0:

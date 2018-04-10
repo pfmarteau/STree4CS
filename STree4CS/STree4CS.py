@@ -57,7 +57,7 @@ class STree4CS():
         self.word = x
         self._build_McCreight(x)
 
-    def _build_McCreight(self, x):
+        def _build_McCreight(self, x):
         """Builds a Suffix tree using McCreight O(n) algorithm.
 
         Algorithm based on:
@@ -67,11 +67,12 @@ class STree4CS():
         """
         u = self.root
         d = 0
-        for i in range(len(x)):
-            while u.depth == d and u._has_transition(x[d + i]):
+        lx=len(x)
+        for i in range(lx):
+            while u.depth == d and i+d<lx and u._has_transition(x[d + i]):
                 u = u._get_transition_link(x[d + i])
                 d = d + 1
-                while d < u.depth and x[u.idx + d] == x[i + d]:
+                while d < u.depth and u.idx + d <lx and i+d<lx and x[u.idx + d] == x[i + d]:
                     d = d + 1
             if d < u.depth:
                 u = self._create_node(x, u, d)
@@ -262,7 +263,7 @@ class STree4CS():
         UPPAs = [i for i in range(1, 1000000)]
         for i in UPPAs:
             yield ([-i])
-        raise ValueError("To many input sequences.")
+        raise ValueError("Too many input sequences.")
 
     def getNextBreakDichotomic(self, s):
         '''

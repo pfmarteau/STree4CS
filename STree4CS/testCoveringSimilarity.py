@@ -10,6 +10,11 @@ def randomList(rg, minl, maxl):
         out.append(random.randint(0, rg))
     return out
 
+def arrayOfintarray2str(l):
+    out=[]
+    for e in l:
+        out.append(intarray2str(e))
+    return out
 
 def str2intarray(s):
     out = []

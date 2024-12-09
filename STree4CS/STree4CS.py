@@ -59,7 +59,6 @@ class STree4CS():
 
         def _build_McCreight(self, x):
         """Builds a Suffix tree using McCreight O(n) algorithm.
-
         Algorithm based on:
         McCreight, Edward M. "A space-economical suffix tree construction algorithm." - ACM, 1976.
         Implementation based on:
